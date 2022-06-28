@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../imagenes/fondo.jpg);
+}
+
+.pages {
+  background-image: url(../imagenes/fondo.jpg);
+}
+
+h1 {
+  color: rgb(244, 244, 244);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 90px;
+  padding-left: 180px;
+  padding-top: 45px;
+  position: fixed;
+}
+
+#img_h1 {
+  padding: 30px;
+  position: fixed;
+}
+
+#img_h1mobile {
+  padding-left: 10px;
+  padding-top: 35px;
+  position: fixed;
+}
+
+#h2_index {
+  color: rgb(244, 244, 244);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  justify-self: center;
+  padding-top: 550px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+ul {
+  padding-top: 95px;
+  padding-right: 50px;
+  padding-left: 1000px;
+  position: fixed;
+  color: white;
+  font-size: 20px;
+}
+
+li {
+  color: rgb(226, 226, 226);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: inline;
+}
+
+/*Galeria*/
+#h2_galeria {
+  color: rgb(226, 226, 226);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  justify-self: center;
+  padding-top: 300px;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 20px;
+}
+
+.main_galeria {
+  /*display: grid;
+  grid-template-columns: auto auto auto auto;*/
+  row-gap: 30px;
+  padding: 20px;
+  /* justify-content: space-evenly;*/
+}
+
+/*informacion y presupuesto*/
+#main_informacion, #main_presupuesto {
+  padding-top: 150px;
+  padding-left: 30px;
+}
+
+.h2_informacion, .h2_presupuesto {
+  color: rgb(226, 226, 226);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  justify-self: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-left: 25px;
+  display: flex;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+}
+
+ol {
+  padding-left: 35px;
+  display: grid;
+  justify-content: flex-start;
+}
+
+fieldset {
+  color: white;
+  margin: 10px 700px 180px 60px;
+  padding: 15px;
+}
+
+#art_presupuesto {
+  padding-bottom: 100px;
+}
+
+#inframe_contacto {
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-bottom: 130px;
+}
+
+footer {
+  display: flex;
+  padding-top: 20px;
+  background-color: linear-gradient to top, white, black;
+  opacity: 0.7;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_div {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 260px) {
+  /*index*/
+  #main {
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto 15%;
+    grid-template-areas: "header" "main" "footer";
+  }
+
+  .main_galeria {
+    grid-template-columns: auto;
+  }
+
+  #img_h1 {
+    display: none;
+  }
+
+  #img_h1mobile {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  h1 {
+    color: rgb(244, 244, 244);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    background-image: url(imagenes/david.jpg);
+    z-index: 1;
+    padding-right: 15px;
+  }
+
+  .foto {
+    transform: scale(90%);
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  #h2_index {
+    color: rgb(244, 244, 244);
+    display: flex;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 500px;
+    padding-bottom: 0px;
+  }
+
+  footer {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: black;
+    opacity: 0.7;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer_div {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  /*galeria*/
+  #h2_galeria {
+    color: rgb(226, 226, 226);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar {
+    display: none;
+  }
+
+  header {
+    padding-right: 100%;
+    padding-bottom: 180px;
+    background: linear-gradient(to top, transparent, black 50% 100%);
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #img_h1 {
+    display: block;
+  }
+
+  #img_h1mobile {
+    display: none;
+  }
+
+  ul {
+    display: block;
+  }
+
+  #menu_burger {
+    display: none;
+  }
+
+  body {
+    background-image: url(../imagenes/fondo.jpg);
+  }
+
+  .pages {
+    background-image: url(../imagenes/fondo.jpg);
+  }
+
+  h1 {
+    color: rgb(244, 244, 244);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 90px;
+    padding-left: 180px;
+    padding-top: 45px;
+    position: fixed;
+    background-image: none;
+  }
+
+  #img_h1 {
+    padding: 30px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #img_h1mobile {
+    padding-left: 10px;
+    padding-top: 35px;
+    position: fixed;
+  }
+
+  #h2_index {
+    color: rgb(244, 244, 244);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 60px;
+    justify-self: center;
+    padding-top: 515px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: rgb(244, 244, 244);
+  }
+
+  ul {
+    padding-top: 25px;
+    position: fixed;
+    color: white;
+    font-size: 20px;
+    text-align: end;
+    z-index: 1;
+  }
+
+  li {
+    color: rgb(244, 244, 244);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: inline;
+  }
+
+  /*Galeria*/
+  #h2_galeria {
+    color: rgb(244, 244, 244);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    justify-self: center;
+    padding-top: 200px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  #desing {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .card {
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+  }
+
+  .card-title, .card-text {
+    color: rgb(244, 244, 244);
+    text-align: center;
+  }
+
+  .btn, .btn-primary {
+    background-color: rgb(183, 21, 21);
+    border-color: rgb(86, 34, 34);
+  }
+
+  /* .main_galeria{
+       display: grid;
+       grid-template-columns: auto auto auto auto;
+       row-gap: 30px;
+       padding: 20px;
+       justify-content: space-evenly; */
+}
+.foto {
+  transition: all 2s;
+}
+
+.foto:hover {
+  width: 105%;
+  height: 105%;
+}
+
+/*informacion y presupuesto*/
+#main_informacion, #main_presupuesto {
+  padding-top: 150px;
+  padding-left: 30px;
+}
+
+.h2_informacion {
+  color: rgb(244, 244, 244);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  justify-self: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.h2_presupuesto {
+  color: rgb(244, 244, 244);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  justify-self: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-left: 25px;
+  display: flex;
+  color: rgb(244, 244, 244);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+  text-align: center;
+}
+
+ol {
+  padding-left: 35px;
+  display: grid;
+  justify-content: flex-start;
+}
+
+fieldset {
+  color: rgb(244, 244, 244);
+  margin: 10px 700px 180px 60px;
+  padding: 15px;
+}
+
+#inframe_contacto {
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-bottom: 130px;
+}
+
+footer {
+  padding-bottom: 5%;
+  padding-top: 0px;
+  background: linear-gradient(to top, black 0 50%, transparent);
+  opacity: 0.9;
+  justify-content: center;
+}
+
+.input-group {
+  padding-left: 45px;
+  padding-top: 5px;
+}
+
+.input-group-text {
+  background-color: rgb(128, 97, 97);
+}
+
+.footer_div {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  transform: translate(0px, 40px);
+}
+
+#footer_presupuesto {
+  transform: translateX(60px);
+}
+
+#mapa {
+  transform: scale(70%);
+}/*# sourceMappingURL=style.css.map */
